@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu">
+        <p class="logo">
+          Movie Fortress
+          <img
+            src="images/Team_Fortress_2_style_logo.svg.png"
+            width="48px"
+            height="30px"
+            alt=""
+            srcset=""
+          />
+        </p>
+        <ul class="footer_ul">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="catalog.html">Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search"
+          id="searchInput"
+          oninput="searchMovies()"
+        />
+        <img src="images/Icon.png" alt="Search" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+      <div class="buttons">
+        <a href="login.html"><button class="auth">Log In</button></a>
+        <a href="sign_up.html"><button class="auth">Sign In</button></a>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <button
+        class="nav_burger"
+        onclick="navShow()"
+        style="background-color: transparent; border: solid 0px !important"
+      >
+        <img src="images/burger-menu-svgrepo-com.svg" width="30px" alt="" />
+      </button>
+    </nav>
+    <div class="navSh">
+      <button
+        class="nav_burger"
+        onclick="navShow()"
+        style="background-color: transparent; border: solid 0px !important"
+      >
+        <img src="images/burger-menu-svgrepo-com.svg" width="30px" alt="" />
+      </button>
+      <ul class="footer_ul">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+      </ul>
+      <div class="buttons_mob">
+        <a href=""><button class="auth">Log In</button></a>
+        <a href=""><button class="auth">Sign In</button></a>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+    </div>
+    <div id="grid"></div>
+    <footer class="footer">
+      <ul class="footer_ul">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+      </ul>
+      <ul>
+        <li><a href="">© Movie Fortress Ltd.</a></li>
+        <li><a href="">Kazakhstan Taraz Pushkin's 154</a></li>
+        <li><a href="">Powered by MockAPI</a></li>
+      </ul>
+    </footer>
+    <script src="./catalog.js"></script>
+    <script>
+      const navSh = document.querySelector(".navSh");
+      navSh.style.display = "none";
+
+      function navShow() {
+        if (navSh.style.display === "flex") {
+          navSh.style.display = "none";
+        } else {
+          navSh.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>

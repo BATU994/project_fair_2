@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prices.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu">
+        <p class="logo">
+          Movie Fortress
+          <img
+            src="images/Team_Fortress_2_style_logo.svg.png"
+            width="48px"
+            height="30px"
+            alt=""
+            srcset=""
+          />
+        </p>
+        <ul class="footer_ul">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="catalog.html">Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search"
+          id="searchInput"
+          oninput="searchMovies()"
+        />
+        <img src="images/Icon.png" alt="Search" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+      <div class="buttons">
+        <a href="login.html"><button class="auth">Log In</button></a>
+        <a href="sign_up.html"><button class="auth">Sign In</button></a>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <button
+        class="nav_burger"
+        onclick="navShow()"
+        style="background-color: transparent; border: solid 0px !important"
+      >
+        <img src="images/burger-menu-svgrepo-com.svg" width="30px" alt="" />
+      </button>
+    </nav>
+    <div class="navSh">
+      <button
+        class="nav_burger"
+        onclick="navShow()"
+        style="background-color: transparent; border: solid 0px !important"
+      >
+        <img src="images/burger-menu-svgrepo-com.svg" width="30px" alt="" />
+      </button>
+      <ul class="footer_ul">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+      </ul>
+      <div class="buttons_mob">
+        <a href=""><button class="auth">Log In</button></a>
+        <a href=""><button class="auth">Sign In</button></a>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Prices</h2>
+      <div class="prices_container">
+        <div class="basic price">
+          <div class="upper_price">
+            <h3>Basic</h3>
+            <ul>
+              <li><p>Access all movies</p></li>
+              <li><p>HD quality</p></li>
+              <li><p>Only 2 one-time logins</p></li>
+            </ul>
+          </div>
+          <div class="lower_price">
+            <h3>$5/month</h3>
+            <button>Purchase</button>
+          </div>
+        </div>
+        <div class="pro price">
+          <div class="upper_price">
+            <h3>Pro</h3>
+            <ul>
+              <li><p>Access all movies</p></li>
+              <li><p>2K quality</p></li>
+              <li><p>6 one-time logins</p></li>
+            </ul>
+          </div>
+          <div class="lower_price">
+            <h3>$10/month</h3>
+            <button>Purchase</button>
+          </div>
+        </div>
+        <div class="pro_plus price">
+          <div class="upper_price">
+            <h3>Pro+</h3>
+            <ul>
+              <li><p>Access all movies</p></li>
+              <li><p>4K quality</p></li>
+              <li><p>10 one-time logins</p></li>
+              <li><p>Get announcments of new movies</p></li>
+            </ul>
+          </div>
+          <div class="lower_price">
+            <h3>$25/month</h3>
+            <button>Purchase</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <ul class="footer_ul">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+      </ul>
+      <ul>
+        <li><a href="">© Movie Fortress Ltd.</a></li>
+        <li><a href="">Kazakhstan Taraz Pushkin's 154</a></li>
+        <li><a href="">Powered by MockAPI</a></li>
+      </ul>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Movie Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu">
+        <p class="logo">
+          Movie Fortress
+          <img
+            src="images/Team_Fortress_2_style_logo.svg.png"
+            width="48px"
+            height="30px"
+            alt=""
+            srcset=""
+          />
+        </p>
+        <ul class="footer_ul">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="catalog.html">Catalogue</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Search"
+          id="searchInput"
+          oninput="searchMovies()"
+        />
+        <img src="images/Icon.png" alt="Search" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+      <div class="buttons">
+        <a href="login.html"><button class="auth">Log In</button></a>
+        <a href="sign_up.html"><button class="auth">Sign In</button></a>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+      <button
+        class="nav_burger"
+        onclick="navShow()"
+        style="background-color: transparent; border: solid 0px !important"
+      >
+        <img src="images/burger-menu-svgrepo-com.svg" width="30px" alt="" />
+      </button>
+    </nav>
+    <div class="navSh">
+      <button
+        class="nav_burger"
+        onclick="navShow()"
+        style="background-color: transparent; border: solid 0px !important"
+      >
+        <img src="images/burger-menu-svgrepo-com.svg" width="30px" alt="" />
+      </button>
+      <ul class="footer_ul">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+      </ul>
+      <div class="buttons_mob">
+        <a href=""><button class="auth">Log In</button></a>
+        <a href=""><button class="auth">Sign In</button></a>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <a class="carousel-item" href="#one!">
+        <img src="images/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg" alt="" />
+        <div class="carousel-info">
+          <h3>Thor Ragnarok</h3>
+          <p>
+            Rating: 7.5
+            <img
+              src="images/star-svgrepo-com.svg"
+              style="width: 15px !important"
+              alt=""
+            />
+          </p>
+        </div>
+      </a>
+      <a class="carousel-item" href="#two!">
+        <img src="images/thanos-and-the-black-order.jpg" alt="" />
+        <div class="carousel-info">
+          <h3>Avengers Infinite War</h3>
+          <p>
+            Rating: 8.0
+            <img
+              src="images/star-svgrepo-com.svg"
+              style="width: 15px !important"
+              alt=""
+            />
+          </p>
+        </div>
+      </a>
+      <a class="carousel-item" href="#three!">
+        <img src="images/the_dark_knight_movie-wallpaper-960x540.jpg" alt="" />
+        <div class="carousel-info">
+          <h3>The Dark Knight</h3>
+          <p>
+            Rating: 9.0
+            <img
+              src="images/star-svgrepo-com.svg"
+              style="width: 15px !important"
+              alt=""
+            />
+          </p>
+        </div>
+      </a>
+      <a class="carousel-item" href="#four!">
+        <img
+          src="images/star-wars-the-last-jedi-2017-movie-poster-red (1).jpg"
+          alt=""
+        />
+        <div class="carousel-info">
+          <h3>Star wars The last Jedi</h3>
+          <p>Rating: 8.5</p>
+        </div>
+      </a>
+    </div>
+
+    <h1 class="text">Most popular</h1>
+    <div class="scroll-container" id="most_popular"></div>
+
+    <h1 class="text">Highly rated</h1>
+    <div class="scroll-container" id="highly_rated"></div>
+    <footer class="footer">
+      <ul class="footer_ul">
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="catalog.html">Catalogue</a></li>
+      </ul>
+      <ul>
+        <li><a href="">© Movie Fortress Ltd.</a></li>
+        <li><a href="">Kazakhstan Taraz Pushkin's 154</a></li>
+        <li><a href="">Powered by MockAPI</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
